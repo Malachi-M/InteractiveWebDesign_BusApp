@@ -1,3 +1,28 @@
+/*******GeneralCSS*******/
 body{
- Look at this body
+    width:100%;
+    display:inline-block;
+    margin:auto; 
+}
+
+/*********Menu*********/
+#buttonMenu{
+    display:inline-block;
+    margin:auto;
+    max-width:100%;
+    position:fixed;
+    bottom:0;
+        
+}
+
+#buttonMenu button{
+    margin:0;
+    padding:2em;
+    font-size:1em;
+    background-color:#EBF7D2;
+    color:#F5191A;
+}
+
+#buttonMenu button:active{
+    background-color:#99E6C9;
 }
