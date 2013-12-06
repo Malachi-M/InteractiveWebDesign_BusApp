@@ -4,14 +4,13 @@ html{
 }    
 body{
     width:100%;
-    display:inline-block;
     margin-left:auto;
     margin-right:auto;
-    margin-top:10%;
+    margin-top:5%;
+    margin-bottom:2%;
     padding:0;
     max-width:400px;
     max-height:480px;
-    
 }
 
 /*********Menu***********/
@@ -28,7 +27,9 @@ button, section{
     bottom:0;
     text-align:center; 
     left:50%;
-    margin-left:-228px;
+    margin-left:-200px;
+    margin-bottom:2%;
+    display:inline-block;
 }
 #buttonMenu button{
     border-left: 1px solid #E8E8E8;
@@ -52,7 +53,7 @@ button, section{
     background-position: -85px 38px;
 }
 #buttonMenu .btnbus{
-    background-position: -168px 38px;
+    background-position: -200px 38px;
 }
 #buttonMenu .btnrecent{
     background-position: -285px 38px;
@@ -60,4 +61,5 @@ button, section{
 
 #map-canvas{
     height:100%;
+    z-index:-1;
 }
