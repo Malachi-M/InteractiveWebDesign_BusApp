@@ -1,7 +1,22 @@
 /*******GeneralCSS*******/
+html{
+    height:100%;   
+}    
 body{
+<<<<<<< HEAD
     max-width:400px;
     margin:auto; 
+=======
+    width:100%;
+    display:inline-block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10%;
+    padding:0;
+    max-width:320px;
+    max-height:480px;
+    
+>>>>>>> a220176f05ce03e2c1920cf6fda1efbef2ab79ea
 }
 
 /*********Menu***********/
@@ -46,4 +61,8 @@ button, section{
 }
 #buttonMenu .btnrecent{
     background-position: -285px 38px;
+}
+
+#map-canvas{
+    height:100%;
 }
