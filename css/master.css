@@ -1,28 +1,49 @@
 /*******GeneralCSS*******/
 body{
-    width:100%;
-    display:inline-block;
+    max-width:400px;
     margin:auto; 
 }
 
-/*********Menu*********/
+/*********Menu***********/
+button, section{
+    margin:0;
+    padding:0;
+    border:0;
+}
+
 #buttonMenu{
-    display:inline-block;
     margin:auto;
     max-width:100%;
     position:fixed;
     bottom:0;
-        
+    text-align:center; 
+    left:50%;
+    margin-left:-228px;
 }
-
 #buttonMenu button{
+    border-left: 1px solid #E8E8E8;
     margin:0;
-    padding:2em;
-    font-size:1em;
-    background-color:#EBF7D2;
-    color:#F5191A;
+    padding: .8em .8em 2.3em .8em;
+    font-size: 1em;
+    background-color:#FE4B28;
+    background-image:url(../images/menuIcons.png);
+    background-repeat:no-repeat;
+    color:#E8E8E8;
+    
 }
-
 #buttonMenu button:active{
-    background-color:#99E6C9;
+    background-color:#03497E;
+}
+#buttonMenu .btnhome {
+    background-position: -15px 38px;
+
+}
+#buttonMenu .btnroute{
+    background-position: -85px 38px;
+}
+#buttonMenu .btnbus{
+    background-position: -168px 38px;
+}
+#buttonMenu .btnrecent{
+    background-position: -285px 38px;
 }
