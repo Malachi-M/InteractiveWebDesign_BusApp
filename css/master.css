@@ -1,8 +1,17 @@
 /*******GeneralCSS*******/
+html{
+    height:100%;   
+}    
 body{
     width:100%;
     display:inline-block;
-    margin:auto; 
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10%;
+    padding:0;
+    max-width:320px;
+    max-height:480px;
+    
 }
 
 /*********Menu*********/
@@ -25,4 +34,8 @@ body{
 
 #buttonMenu button:active{
     background-color:#99E6C9;
+}
+
+#map-canvas{
+    height:100%;
 }
