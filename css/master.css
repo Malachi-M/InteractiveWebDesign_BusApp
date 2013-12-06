@@ -26,13 +26,13 @@ button, section{
     max-width:100%;
     position:fixed;
     bottom:0;
-    text-align:center; 
     left:50%;
     margin-left:-200px;
     margin-bottom:2%;
-    display:inline-block;
+    width: 400px;
 }
 #buttonMenu button{
+    text-align:center; 
     border-left: 1px solid #E8E8E8;
     margin:0;
     padding: .8em .8em 2.3em .8em;
@@ -41,13 +41,14 @@ button, section{
     background-image:url(../images/menuIcons.png);
     background-repeat:no-repeat;
     color:#E8E8E8;
+    width: 25%;
     
 }
 #buttonMenu button:active{
     background-color:#03497E;
 }
 #buttonMenu .btnhome {
-    background-position: -15px 38px;
+    background-position: -5px 38px;
 
 }
 #buttonMenu .btnroute{
@@ -57,10 +58,9 @@ button, section{
     background-position: -200px 38px;
 }
 #buttonMenu .btnrecent{
-    background-position: -285px 38px;
+    background-position: -300px 38px;
 }
 
 #map-canvas{
     height:100%;
-    z-index:-1;
 }
