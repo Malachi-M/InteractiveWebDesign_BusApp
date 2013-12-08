@@ -1,0 +1,1 @@
+var routes = { "routes": [{"name": "University Place", "stops": [{ "name": "Leave Gold's 'N' Street"}, {"name": "33rd & Holdrege"}, {"name": "66th & Judson"}, {"name": "33rd & Holdrege"}, {"name": "Arrive Gold's 11th Street" }], "routeNum": "56", "favorite":"true"}]};

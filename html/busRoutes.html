@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+  <meta charset="UTF-8">
+  <title>Route Information</title>
+  <link rel="stylesheet" href="css/routesstyle.css" media="screen" type="text/css" />
+</head>
+<body>
+
+  <section class="profile-list">
+  <!-- The user profile information will go here -->
+  </section>
+
+ 
+  <!--
+    This is a template that controls how the profiles are
+    displayed.
+  -->
+  <script id="user-template" type="text/x-handlebars-template">
+    {{#routes}}
+    <article class="profile">
+      <span class="expand">+</span>
+
+      <div class="route">
+          {{name}}
+        </div>
+      <section class="route-info">
+        <ol class="routeStops">
+            {{#stops}}
+            <li>{{name}}</li>
+          {{/stops}}
+          </ol>
+        <div class="routeMap">
+          <img src= "/images/routes/route{{routeNum}}.jpg"/> 
+        </div>
+      </section>
+    </article>
+    {{/routes}}
+  </script>
+
+  <!-- Required JavaScript files -->
+  <script src='js/handlebars.min.js'></script>
+  <script src="js/routes.js"></script>
+  <script src="js/render.js"></script>
+  <script src="js/list-inlay.js"></script>
+  
+</body>
+
+</html>
