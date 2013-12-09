@@ -1,23 +1,35 @@
 @import url(http://fonts.googleapis.com/css?family=Muli:300);
 
+/*****************General Styles*************************/
+
+html {
+    height:100%;
+}
 body{
 	background-color: rgb(247, 247, 247);
 	color: rgb(61, 68, 144);
 	font-family: 'Muli', sans-serif;
     font-weight:300;
+    height:100%;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:10%;
+    padding:0;
+    max-width:320px;
+    max-height:480px;
 }
-
+/**********************************************************/
+/*********Begin Routes, Recent Routes Styles***************/
 a{
 	color: rgb(61, 68, 144);
 	
 }
 
 .profile-list{
-	width:500px;
+	width:400px;
 	margin:auto;
 
 }
-
 
 .expand{
 	background-color: rgb(61, 68, 144);
@@ -43,7 +55,6 @@ a{
 	margin-left: 6em;
 	margin-right: 7em;
 }
-
 
 section .route-info {
   font-style: normal;
@@ -75,3 +86,9 @@ section .route-info {
 .profile.expanded .expand{
 	-webkit-transform: rotate(45deg);
 }
+/*********End Routes, Recent Routes Styles***************/
+/******************Begin Map Styles**********************/
+#map-canvas{
+    height:100%;
+}
+/********************End Map Styles**********************/
