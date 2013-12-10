@@ -61,8 +61,8 @@ header {
     
 }
 #home {
-    border-left:1px solid #808080;
-    border-right:1px solid #808080;
+    /*border-left:1px solid #808080;
+    border-right:1px solid #808080;*/
 }
 
 /*********Menu***********/
@@ -162,11 +162,13 @@ a{
 section .route-info {
   font-style: normal;
 }
-
+.routeGo{
+    display:none;
+}
 .profile{
-  clear: both;
-  margin-top: 3em;
-  margin-bottom: 3em;
+    clear: both;
+    margin-top: 3em;
+    margin-bottom: 3em;
 }
 .route-info{
 	background-color:#03497E;
@@ -198,13 +200,32 @@ section .route-info {
     margin-top:86px;   
 }
 
+.profile.expanded .routeGo{
+	background-color:#03497E;
+	color: #E8E8E8;
+	font-size: 1.5em;
+	border-radius: 50%;
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	line-height: .95em;
+	font-weight: bold;
+	float: right;
+	margin-right: -2.35em;
+	margin-top: .75em;
+	-webkit-transition: -webkit-transform .5s;
+	cursor: pointer;
+}
+
+
 .routeMap img{
     margin-left:65px;
 }
 /*********End Routes, Recent Routes Styles***************/
 /******************Begin Map Styles**********************/
 #map-canvas{
-    height:455px;
+    height:440px;
     /*border-left:2px solid #808080;
     border-right:2px solid #808080;*/
 }
