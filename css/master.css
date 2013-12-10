@@ -22,8 +22,10 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Muli', sans-serif;   
 }
 .busImage{
-    margin-top:10em;
     background-image:url(../images/busface_blue.png);
+    background-size: 100% 100%;
+    min-height:390px;
+    margin:0;
 }
 header {
     position:fixed;
@@ -125,7 +127,7 @@ a{
 	width:100%;
    /* border-left:2px solid #808080;
     border-right:2px solid #808080;*/
-    border-top:1px solid #808080;
+    /*border-top:1px solid #808080;*/
     font-family: 'Muli', sans-serif;
     font-weight:300;
     text-align:center;
