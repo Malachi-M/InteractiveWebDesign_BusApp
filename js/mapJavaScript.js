@@ -16,44 +16,43 @@ function displayLocation(position) {
     /*
     var div = document.getElementById("location");
     div.innerHTML = "Current Location: " + "Lat: " + latitude + " Long: " + longitude;*/
+    
+    //Call to map function
     initialize(position.coords);
 }
 
-//creats marker for users locations
-function marker(map, latlong, title, content) {
+//creates marker for user location
+function marker(map, latlong) {
     var options = {
         position: latlong,
         map: map,
-        title: title,
         clickable: false
     };
     
     var marker = new google.maps.Marker(options);
-    
-    /*var inforWindowOptions = {
-        content: content,
-        map: map,
-        postion: latlong
-    };
-    
-    var infoWindow = new google.maps.InfoWindow(inforWindowOptions);
-    
-    google.maps.event.addListener(marker, "click", function() {
-        infoWindow.open(map);
-    });*/
 }
 
 //Creates custom bus marker
-function busMarker(map, latlong){
+function busMarker(map, latlong, content, title){
     var image = '../images/busface_blue1.png';
     var busOptions = {
         position: latlong,
         map: map,
         icon: image,
-        clickable: false
+        title: title
     };
     
     var marker = new google.maps.Marker(busOptions);
+    
+    var inforWindowOptions = {
+       position: latlong,
+        content: content,
+    };
+    var infoWindow = new google.maps.InfoWindow(inforWindowOptions);
+    
+    google.maps.event.addListener(marker, "click", function() {
+    infoWindow.open(map);
+    });
 }
 
 //Creates Google map 
@@ -68,8 +67,8 @@ function initialize(coords){
     var map = new google.maps.Map(document.getElementById("map-canvas"),
         mapOptions);
     
-    var title = "Current Location";
-    var content = "You Are Here: " + coords.latitude + ", " + coords.longitude;
-    marker(map, googleLatLng, title, content);
-    busMarker(map, busLatLng);
+    var content = "College View: Route 50";
+    var title = "Route 50 ";
+    marker(map, googleLatLng);
+    busMarker(map, busLatLng, content, title);
 }
