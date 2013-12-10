@@ -207,12 +207,9 @@ section .route-info {
     margin-right: 4.25em;
 }
 .profile.expanded .expand{
-	-webkit-transform: rotate(45deg);
-    -webkit-transform: translateY();
-    -moz-transform: rotate(45deg);
-    -moz-transform: translateY();
-    transform: rotate(45deg);
-    transform: translateY();
+	-webkit-transform: rotate(45deg) translate(-17px, 30px);
+    -moz-transform: rotate(45deg) translate(-17px, 30px);
+    transform: rotate(45deg) translate(-17px, 30px);
     margin-right:1.5em;
 }
 .profile.expanded {
