@@ -22,10 +22,21 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Muli', sans-serif;   
 }
 .busImage{
-    background-image:url(../images/busface_blue.png);
+    background-image:url(../images/bus_blue.png);
     background-size: 100% 100%;
-    min-height:390px;
+    min-height:115px;
     margin:0;
+    margin-top:50px;
+}
+.resourceLink{
+    font-family: 'Muli', sans-serif;
+    font-weight:800;
+    font-size:1.5em;
+    color:#03497E;
+    text-decoration:underline;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
 }
 header {
     position:fixed;
@@ -185,7 +196,7 @@ section .route-info {
 	-webkit-transition: all .5s;
 }
 .profile.expanded .route-info{
-	max-height: 23em;
+	max-height: 32em;
     padding:1em;
 	padding-top: .25em;
     margin-left: 1em;
@@ -220,7 +231,7 @@ section .route-info {
 
 
 .routeMap img{
-    margin-left:65px;
+    max-width:100%;
 }
 /*********End Routes, Recent Routes Styles***************/
 /******************Begin Map Styles**********************/
