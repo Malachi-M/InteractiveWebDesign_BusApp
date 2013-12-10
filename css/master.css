@@ -160,6 +160,8 @@ a{
 	margin-right: 3em;
 	margin-top: .75em;
 	-webkit-transition: -webkit-transform .5s;
+    -moz-transition: -moz-transform .5s;
+    transition: transform .5s;
 	cursor: pointer;
 }
 
@@ -194,6 +196,8 @@ section .route-info {
 	padding-top: 2px;
 	overflow: hidden;
 	-webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    transition: all .5s;    
 }
 .profile.expanded .route-info{
 	max-height: 32em;
@@ -205,6 +209,10 @@ section .route-info {
 .profile.expanded .expand{
 	-webkit-transform: rotate(45deg);
     -webkit-transform: translateY();
+    -moz-transform: rotate(45deg);
+    -moz-transform: translateY();
+    transform: rotate(45deg);
+    transform: translateY();
     margin-right:1.5em;
 }
 .profile.expanded {
@@ -226,6 +234,8 @@ section .route-info {
 	margin-right: -2.35em;
 	margin-top: .75em;
 	-webkit-transition: -webkit-transform .5s;
+    -moz-transition: -moz-transform .5s;
+    transition: transform .5s;
 	cursor: pointer;
 }
 
