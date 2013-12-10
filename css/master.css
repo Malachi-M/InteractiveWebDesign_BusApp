@@ -5,16 +5,15 @@ html{
     height:100%;   
 }    
 body{
+    max-width:400px;
+    max-height:480px;
     width:100%;
     margin-left:auto;
     margin-right:auto;
-    margin-top:5%;
+    margin-top:11%;
     margin-bottom:2%;
     padding:0;
-    max-width:400px;
-    max-height:480px;
-    background-color:#ffffff;
-   
+    background-color:#ffffff; 
 }
 h1,h2,h3,h4,h5,h6{
     margin: 0;
@@ -23,14 +22,27 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'Muli', sans-serif;   
 }
 .busImage{
+    margin-top:10em;
+    background-image:url(../images/busface_blue.png);
+}
+header {
+    position:fixed;
+    width:396px;
+}
+
+#contentWrapper{
+    /*border-left:2px solid #808080;
+    border-right:2px solid #808080;*/
+    max-height:480px;
+    overflow-y:auto;
 }
 
 #colorBar{
     width:100%;
     height:20px;
     background-color:#03497E;
-    border-left:1px solid #808080;
-    border-right:1px solid #808080;
+   /* border-left:2px solid #808080;
+    border-right:2px solid #808080;*/
 }
 #pageTitle{
     width:100%;
@@ -42,11 +54,11 @@ h1,h2,h3,h4,h5,h6{
     background-color:#E8E8E8;
     color:#FE4B28;
     border-bottom-style:outset;
-    border-left:1px solid #808080;
-    border-right:1px solid #808080;
+   /* border-left:2px solid #808080;
+    border-right:2px solid #808080;*/
     
 }
-.home {
+#home {
     border-left:1px solid #808080;
     border-right:1px solid #808080;
 }
@@ -103,14 +115,21 @@ a{
 	color: #03497E;
 	
 }
-
+#routeNum{
+    margin-top:.5em;
+    text-align:center;
+    font-size:1.5em;
+    color:#E8E8E8;
+}
 .route-list{
 	width:100%;
-    border-left:1px solid #808080;
-    border-right:1px solid #808080;
+   /* border-left:2px solid #808080;
+    border-right:2px solid #808080;*/
     border-top:1px solid #808080;
     font-family: 'Muli', sans-serif;
     font-weight:300;
+    text-align:center;
+    
 }
 
 .expand{
@@ -162,27 +181,29 @@ section .route-info {
 	-webkit-transition: all .5s;
 }
 .profile.expanded .route-info{
-	max-height: 15em;
-	padding: 1em;
+	max-height: 23em;
+    padding:1em;
+	padding-top: .25em;
     margin-left: 1em;
     margin-right: 4.25em;
 }
 .profile.expanded .expand{
 	-webkit-transform: rotate(45deg);
     -webkit-transform: translateY();
-
     margin-right:1.5em;
 }
+.profile.expanded {
+    margin-top:86px;   
+}
 
-img {
-    padding:0;
-    margin:0;
+.routeMap img{
+    margin-left:65px;
 }
 /*********End Routes, Recent Routes Styles***************/
 /******************Begin Map Styles**********************/
 #map-canvas{
     height:455px;
-    border-left:1px solid #808080;
-    border-right:1px solid #808080;
+    /*border-left:2px solid #808080;
+    border-right:2px solid #808080;*/
 }
 /********************End Map Styles**********************/

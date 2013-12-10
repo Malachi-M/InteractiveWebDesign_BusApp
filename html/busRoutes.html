@@ -7,14 +7,18 @@
         <link rel="stylesheet" href="../css/master.css" media="screen" type="text/css" />
     </head>
     <body>
-        <div id="colorBar">
+        <div id="contentWrapper">
+            <header>
+                <div id="colorBar">
+                </div>
+                <div id="pageTitle">
+                    <h2>Routes</h2>
+                </div>
+            </header>
+            <section class="route-list">
+            <!-- The user profile information will go here -->
+            </section>
         </div>
-        <div id="pageTitle">
-            <h2>Routes</h2>
-        </div>
-        <section class="route-list">
-        <!-- The user profile information will go here -->
-        </section>
     
      
       <!--
@@ -30,13 +34,14 @@
               {{name}}
             </div>
           <section class="route-info">
+              <h3 id="routeNum">Route: {{routeNum}}</h3>
             <ol class="routeStops">
                 {{#stops}}
                 <li>{{name}}</li>
               {{/stops}}
               </ol>
             <div class="routeMap">
-              <img src= "/images/routes/route{{routeNum}}.jpg"/> 
+              <img src= "/images/routes/route{{routeNum}}.jpg" /> 
             </div>
           </section>
         </article>
