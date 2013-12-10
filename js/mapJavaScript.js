@@ -58,8 +58,8 @@ function busMarker(map, latlong){
 
 //Creates Google map 
 function initialize(coords){
-    var googleLatLng = new google.maps.LatLng(coords.latitude, coords.longitude)
-    //var busLatLng = new google.maps.LatLng(40.77319790000001 -96.5537738)
+    var googleLatLng = new google.maps.LatLng(coords.latitude, coords.longitude);
+    var busLatLng = new google.maps.LatLng(40.76019790000001, -96.6537738);
     var mapOptions = {
         center: googleLatLng,
         zoom: 12,
@@ -71,5 +71,5 @@ function initialize(coords){
     var title = "Current Location";
     var content = "You Are Here: " + coords.latitude + ", " + coords.longitude;
     marker(map, googleLatLng, title, content);
-    busMarker(map, googleLatLng);
+    busMarker(map, busLatLng);
 }
