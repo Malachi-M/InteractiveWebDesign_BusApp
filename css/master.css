@@ -41,6 +41,7 @@ h1,h2,h3,h4,h5,h6{
 header {
     position:fixed;
     width:396px;
+    z-index:1;
 }
 
 #contentWrapper{
