@@ -1,4 +1,4 @@
-/*********Fonts**********/
+                /*********Fonts**********/
 @import url(http://fonts.googleapis.com/css?family=Muli:300);
 /*******GeneralCSS*******/
 html{
@@ -210,7 +210,7 @@ section .route-info {
 .profile.expanded .expand{
 	-webkit-transform: rotate(45deg) translate(-17px, 30px);
     -moz-transform: rotate(45deg) translate(-17px, 30px);
-    transform: rotate(45deg) translate(-17px, 30px);
+    transform: rotate(45deg) translate(-17px, 30px) scale(5px);
     margin-right:1.5em;
 }
 .profile.expanded {
@@ -220,7 +220,6 @@ section .route-info {
 .profile.expanded .routeGo{
 	background-color:#03497E;
 	color: #E8E8E8;
-	font-size: 1.5em;
 	border-radius: 50%;
 	display: inline-block;
 	width: 1em;
