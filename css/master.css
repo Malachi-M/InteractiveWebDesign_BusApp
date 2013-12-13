@@ -205,12 +205,12 @@ section .route-info {
     padding:1em;
 	padding-top: .25em;
     margin-left: 1em;
-    margin-right: 4.25em;
+    margin-right: -0.75em;
 }
 .profile.expanded .expand{
-	-webkit-transform: rotate(45deg) translate(-17px, 30px);
-    -moz-transform: rotate(45deg) translate(-17px, 30px);
-    transform: rotate(45deg) translate(-17px, 30px) scale(5px);
+	-webkit-transform: rotate(45deg) translate(-1px, 25px) scale(1.5);
+    -moz-transform: rotate(45deg) translate(-1px, 25px) scale(1.5);
+    transform: rotate(45deg) translate(-1px, 25px) scale(1.5);
     margin-right:1.5em;
 }
 .profile.expanded {
