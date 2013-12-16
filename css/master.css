@@ -76,7 +76,13 @@ header {
     /*border-left:1px solid #808080;
     border-right:1px solid #808080;*/
 }
-
+#faq{
+    max-height:475px;
+    overflow-y:auto;
+}
+article h3{
+    color:#FE4B28;
+}
 /*********Menu***********/
 button, section{
     margin:0;
@@ -142,8 +148,7 @@ a{
     /*border-top:1px solid #808080;*/
     font-family: 'Muli', sans-serif;
     font-weight:300;
-    text-align:center;
-    
+    text-align:center;  
 }
 .expand{
 	background-color:#03497E;
