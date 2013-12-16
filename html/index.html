@@ -9,21 +9,35 @@
     </head>
     <body>
         <article id="home">
-            <div id="colorBar"></div>
+            <div id="colorBar">
+            <p class="weather">Current: <a href="" class="icon" data-icon="B"> </a>           <span id="weatherFormat">Forecast: <a href="" class="icon" data-icon="W"> </a></span> </p>
+            </div>
             <div id="pageTitle">
                 <h2>Bus Route App</h2>
             </div>
-            <article class="resources">
-                <ul>
-                    <a href="http://getonboard.lincoln.ne.gov/"><li class="resourceLink">Lincoln Bus System</li></a>
-                    <a href="http://www.lincoln.ne.gov/city/pworks/startran/faq.htm"><li class="resourceLink">Bus Riding FAQs</li></a>
-                    <a href="http://www.ucollege.edu/"><li class="resourceLink">Union College</li></a>
-                </ul>
+            <div class="route-list"></div>
+            <script id="user-template" type="text/x-handlebars-template">
+            <article class="favoriteRoute">
+                 <p>{{#routes}}{{#favorite}}
+                <h2><a href="busMap.html">{{routeNum}} - {{name}}</a></h2>
+                <em>15 min 24 secs to stop</em>
+                {{/favorite}}{{/routes}}
+                </p>
             </article>
+            </script>    
+                <ul id="nav">
+                    <a href="../html/busRoutes.html"><li class="homeRoute">Routes</li></a>
+                    <a href="../html/busMap.html"><li class="homeBus">Nearby</li></a><a href="../html/faqs.html"><li class="homeRecent">F.A.Q.s</li></a>
+                </ul>
+            
             <div class="busImage"></div>
-            <section id="buttonMenu">
+            <!--<section id="buttonMenu" id="indexPage">
                 <a href="../html/index.html"><button class="btnhome">Home</button></a><a href="../html/busRoutes.html"><button class="btnroute">Routes</button></a><a href="../html/busMap.html"><button class="btnbus">Nearby</button></a><a href="../html/faqs.html"><button class="btnrecent">F.A.Q.s</button></a>
-        </section>
+            </section> -->
         </article>
+        <!-- Required JavaScript files -->
+        <script src='../js/handlebars.min.js'></script>
+        <script src="../js/routes.js"></script>
+        <script src="../js/render.js"></script>
     </body>
 </html>
