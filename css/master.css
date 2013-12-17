@@ -148,6 +148,10 @@ header {
 article h3{
     color:#FE4B28;
 }
+.wrapper {
+    padding-bottom:20px;
+    font-style:italic;
+}
 /*********Menu***********/
 button, section{
     margin:0;
