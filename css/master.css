@@ -39,9 +39,7 @@ h1,h2,h3,h4,h5,h6,span{
     font-weight: normal;
     font-family: 'Muli', sans-serif;   
 }
-nav{
 
-}
 .menuIcons{
     background-image:url(../images/menuIconsblue.png);
     background-size:100%;
@@ -49,30 +47,35 @@ nav{
     margin:0;
     margin-top:0px;
 }
-#nav{
+ul {
+   list-style:none; 
+}
+ul a{
     text-decoration:none;
 }
-li{
-    font-size:24px;
-    margin-bottom:25px;
+ul li{
+    font-size:31px;
+    margin-bottom:40px;
     background-position: left -21px;    
-    margin-left:25px;
+    margin-left:60px;
+    text-decoration:none;
+
 }
 .homeBus,
 .homeRoute,.homeRecent {
     background-image:url(../images/menuIconsblue.png);
-    background-size: 20px auto;
-    padding-left: 20px;
+    background-size: 27px auto;
+    padding-left: 55px;
     background-repeat:no-repeat;
 }
 .homeBus {
-    background-position: left -90px;   
+    background-position: left -115px;
 }
 .homeRoute {
     background-position: left -21px;   
 }
 .homeRecent {
-    background-position: left -158px;
+    background-position: left -205px;
 }
 /*.busImage{
     background-image:url(../images/bus_blue.png);
@@ -81,6 +84,7 @@ li{
     margin:0;
     margin-top:50px;
 }*/
+
 .resourceLink{
     font-family: 'Muli', sans-serif;
     font-weight:800;
