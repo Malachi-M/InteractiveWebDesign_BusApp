@@ -8,7 +8,8 @@ Bus Route App
 ##### You are just finishing up shopping at the Goodwill store on Vine street. You found a couple of great bargains and you are now are ready to head back home. The friend you came with had to leave and you told him/her not to worry you would ride the bus home.  You launch the app. What do you do next?
 
 _Notes_:
-1. User went to the routes page first to see if they could find a route. The scrolled through and decided on the Vine street route which for this scenario is the correct route. 2. User expanded the route to verify it was going work for them.
+1. User went to the routes page first to see if they could find a route. The scrolled through and decided on the Vine street route which for this scenario is the correct route. 
+2. User expanded the route to verify it was going work for them.
 3. Next clicked on Nearby in the menu to find the bus closest. 
 4. User found the whole processes to be straight forward and relatively seemless.
 5. User clicked on busses to find out which busses was on the route they wanted and was pleased to see the time to closest stop.
